@@ -1,0 +1,37 @@
+* {
+  font-family: "Zilla Slab", serif;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Dancing Script", cursive !important;
+  color: black !important;
+}
+.inst-text {
+  font-family: "Dancing Script", cursive !important;
+}
+html,
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  /* background: linear-gradient(45deg, #f857a6, #ff5858) !important; */
+  background: linear-gradient(30deg, #da4453, #b865a0, #d4797c) !important;
+  background-size: 100% 100% !important;
+  animation: gradient 10s ease infinity !important;
+  color: rgb(97, 75, 75);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* .img-prof {
+  size: 50px !important;
+} */

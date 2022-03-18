@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Начало -->
+    <!-- ! Navbar start -->
+    <div class="container sticky-sm-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background: linear-gradient(30deg, #da4453, #b865a0, #d4797c)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand inst-text fs-3" href="#up-str">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt=""
+              width="45"
+              height="47"
+              class="d-inline-block align-text-top"
+            />
+            Instagram
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >My profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Post</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                id="search"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <button
+              class="btn btn-outline-light"
+              type="submit"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add post
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- ! Navbar end -->
+
+    <!-- ! Главная страница -->
+    <div class="container-fluid">
+      <h1 id="up-str" class="text-center fs-1 fw-bold mt-3">
+        Welcome to my page
+      </h1>
+    </div>
+    <!-- ! Главная страница конец -->
+
+    <!-- ! ALERT CONTAINER -->
+    <div class="alert-cont">
+      <!-- <div class="alert alert-danger" role="alert">Заполните поля!</div> -->
+      <svg
+        class="bi flex-shrink-0 me-2"
+        width="24"
+        height="24"
+        role="img"
+        aria-label="Success:"
+      >
+        <use xlink:href="#check-circle-fill" />
+      </svg>
+    </div>
+
+    <!-- ! ALERT CONTAINER END -->
+
+    <!-- ! Add form modal POST-->
+    <div class="container">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add post</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input
+                id="title"
+                type="text"
+                class="form-control"
+                placeholder="Title"
+                style="margin-bottom: 10px"
+              />
+              <input
+                id="descript"
+                type="text"
+                class="form-control"
+                placeholder="Description"
+                style="margin-bottom: 10px"
+              />
+              <input
+                id="img"
+                type="text"
+                class="form-control"
+                placeholder="Image"
+                style="margin-bottom: 10px"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button id="btn-save" type="button" class="btn btn-primary">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! End form modal-->
+
+    <!-- ! Edit form modal -->
+    <div class="container">
+      <div
+        class="modal fade"
+        id="editModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit product</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input
+                id="edit-title"
+                type="text"
+                class="form-control"
+                placeholder="Title"
+              />
+              <input
+                id="edit-descript"
+                type="text"
+                class="form-control"
+                placeholder="Description"
+              />
+              <input
+                id="edit-img"
+                type="text"
+                class="form-control"
+                placeholder="Image"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button id="edit-btn-save" type="button" class="btn btn-primary">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! End edit form modal-->
+
+    <!-- ! List -->
+    <div class="container">
+      <div class="container mt-5 my-2 align-items-center">
+        <div id="list" class="d-flex flex-wrap justify-content-evenly"></div>
+      </div>
+    </div>
+    <!-- ! End of List -->
+
+    <!-- ! Pagination start -->
+    <div class="container">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination d-flex justify-content-center">
+          <li id="prev" class="page-item">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <div id="pagination-list" class="d-flex"></div>
+          <li id="next" class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ! Pagination End -->
+
+    <!-- todo Footer -->
+    <div class="py-3 text-center text-black">
+      Copyring &copy; 2022 Regina Zhanara
+    </div>
+    <!-- todo Footer -->
+
+    <!-- Конец -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/friends.js"></script>
+  </body>
+</html>
